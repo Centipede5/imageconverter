@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>png-jpg.com - convert jpg to png for free, super fast</title>
+<meta name="description" content="png-jpg.com allows you to convert jpg and png files, no signup required! Your files are never uploaded to an external server for your privacy. Unlimited file size!"/>
+<meta name="author" content="Centipede5"/>
+<link rel="base" href="https://png-jpg.com"/>
+<link rel="canonical" href="https://png-jpg.com"/>
+<meta rel="sitemap" type="application/xml" content="https://png-jpg.com/sitemap.xml"/>
+<meta name="robots" content="index/follow"/>
+<meta name="googlebot" content="index/follow"/>
+<meta name="theme-color" content=""/>
+<meta name="msapplication-navbutton-color" content=""/>
+<meta name="apple-mobile-web-app-status-bar-style" content=""/>
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="png-jpg.com"/>
+<meta itemprop="description" content="png-jpg.com allows you to convert jpg and png files, no signup required! Your files are never uploaded to an external server for your privacy. Unlimited file size!"/>
+<meta itemprop="image" content="https://png-jpg.com/thumb.png"/>
+<!-- markup for facebook -->
+<meta property="og:type" content=""/>
+<meta property="og:title" content="png-jpg.com"/>
+<meta property="og:url" content="https://png-jpg.com"/>
+<meta property="og:site_name" content="png-jpg.com"/>
+<meta property="og:image" content="https://png-jpg.com/thumb.png"/>
+<meta property="og:description" content="png-jpg.com allows you to convert jpg and png files, no signup required! Your files are never uploaded to an external server for your privacy. Unlimited file size!"/>
+<meta property="og:locale" content=""/>
+<meta property="fb:app_id" content=""/>
+<meta property="fb:admins" content=""/>
+<!-- markup for twitter -->
+<meta name="twitter:card" content="Summary Large Image"/>
+<meta name="twitter:title" content="png-jpg.com"/>
+<meta name="twitter:description" content="png-jpg.com allows you to convert jpg and png files, no signup required! Your files are never uploaded to an external server for your privacy. Unlimited file size!"/>
+<meta name="twitter:creator" content="Centipede5"/>
+<meta name="twitter:image" content="https://png-jpg.com/thumb.png"/>
+<!-- JSON-LD - structured data markup Google Search -->
+<script type="application/ld+json">
+{"@context":"http://www.schema.org","@type":"website","name":"jpg-png.com","alternateName":"jpg-png.com","url":"https://jpg-png.com"}
+</script>
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="jszip.min.js"></script>
+      <script src="FileSaver.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+   </head>
+   <body>
+      <div class="jumbotron text-center">
+         <h1>JPG to PNG converter</h1>
+         <p>The fastest and most secure converter on the web!</p>
+      </div>
+      <div class="container ">
+         <div class="jumbotron">
+            <div class="row">
+               <div class="form-group col">
+                  <label for="exampleFormControlSelect1">Convert from</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                     <option>JPG</option>
+                     <option>PNG</option>
+                     <option>BMP</option>
+                  </select>
+               </div>
+               <div class="form-group col">
+                  <label for="exampleFormControlSelect2">To</label>
+                  <select class="form-control" id="exampleFormControlSelect2">
+                     <option>PNG</option>
+                     <option>JPG</option>
+                     <option>BMP</option>
+                  </select>
+               </div>
+            </div>
+            <div class="form-group file-upload-wrapper">
+               <label for="pwd">Upload files:</label>
+               <input type="file" class="file-upload-wrapper" accept="image/*" id="images" type="file" name="pwd" multiple>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" id="tozip" type="checkbox"> Zip files
+                </label>
+              </div>
+            <button type="button" class="btn btn-primary my-3" onclick="convert()">Convert</button>
+         </div>
+      </div>
+      <div class="container">
+          <div class="jumbotron bg-dark text-light" id="dropzone" style="text-align:center;">
+              Drop files here
+          </div>
+      </div>
+      <div class="container">
+          <div class="jumbotron" id="dropzone" style="text-align:left;">
+              <h2>Convert png to jpg online!</h2>
+              <p>
+This free online online image converter can convert many of the most popular image file formats, such as png to jpg, jpg to png, or bmp formats. if you want to convert to jpg or to png this is the best converter for you! 
+            </p><p>
+This online tool takes your jpg images, png images, or bmp images and converts them for free online. there is no maximum file size! this is because all the conversion happens on the page, it is 100% safe, free, and your images remain private! this converter can take any of  your graphics files and quickly convert them. 
+</p><p>
+To use this converter, simply upload, or drag and drop your images into the converter. then check "zip files" if you want all the images to be put together into one zip file (lossless compression), and click convert. to upload multiple images, highlight them all and drag them onto the page. 
+</p><p>
+if your looking for a converter png to jpg or a jpg to png converter you should try this. it converts your jpg images, your png files, and bmp files quickly for free. The images are converted with 0 loss in image quality, so you dont have to worry about that either (some converters have this issue). Make sure to share it with your friends!
+    </p>
+          </div>
+      </div>
+      <script>
+      
+        var droppedFiles = false;
+        var drop = document.getElementById("dropzone");
+        var tostop = ["drag","dragstart","dragend","dragover","dragenter","dragleave","drop"];
+        for(var i in tostop){
+            drop.addEventListener(tostop[i],function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                e.originalEvent = e;
+            });
+        }
+        tostop = ["dragover","dragenter"];
+        for(var i in tostop){
+            drop.addEventListener(tostop[i],function(e){
+                document.getElementById("dropzone").classList.add("bg-light");
+            });
+        }
+        tostop = ["dragleave","dragend","drop"];
+        for(var i in tostop){
+            drop.addEventListener(tostop[i],function(e){
+                document.getElementById("dropzone").classList.remove("bg-light");
+            });
+        }
+        drop.addEventListener("drop",function(e){
+            console.log(e);
+            document.getElementById("images").files = e.originalEvent.dataTransfer.files
+        });
+
+      window.convertto = 'png';
+      window.zip = null;
+   var JpgToPngConvertor = function(){
+     function convertor(imageFileBlob, options) {
+       options = options || {};
+       const defaults = {
+         downloadLinkSelector: '.js-download-'+window.convertto
+       };
+       const settings = extend(defaults, options);
+       const canvas = document.createElement('canvas');
+       const ctx = canvas.getContext("2d");
+       const imageEl = createImage();
+       const downloadLink = settings.downloadEl || createDownloadLink();
+
+       function createImage(options) {
+         options = options || {};
+         const img = (Image) ? new Image() : document.createElement('img');
+         const parent = options.parentEl || document.body;
+         img.style.width = (options.width) ? options.width + 'px' : 'auto';
+         img.style.height = (options.height) ? options.height + 'px' : 'auto';
+         return img;
+       }
+
+       function extend(target, source) {
+         for (let propName in source) {
+           if (source.hasOwnProperty(propName)) {
+             target[propName] = source[propName];
+           }
+         }
+         return target;
+       }
+
+       function createDownloadLink() {
+         return document.createElement('a');
+       }
+
+       function isFirefox() {
+         return navigator.userAgent.indexOf("Firefox") > -1;
+       }
+
+       function download(blob) {
+         // Add download link to DOM in case it is not there and on the firefox
+         if(!window.zip){
+            if (!document.contains(downloadLink) && isFirefox()) {
+                downloadLink.style.display = 'none';
+                document.body.appendChild(downloadLink);
+            }
+            if ('click' in downloadLink) {
+                downloadLink.click();
+            } else {
+                downloadLink.dispatchEvent(createClickEvent());
+            }
+         }else{
+            zip.file(document.getElementById("images").files[converted].name.substring(0,document.getElementById("images").files[converted].name.indexOf("."))+"."+window.convertto, blob);
+            converted++;
+            if(converted==document.getElementById("images").files.length){
+                zip.generateAsync({type:"blob"}).then(function(content) {
+                    saveAs(content, "images.zip");
+                });
+            }
+         }
+         
+       }
+
+       function updateDownloadLink(jpgFileName, pngBlob) {
+           console.log(jpgFileName);
+         const linkEl = downloadLink;
+         var pngFileName = "";
+         if(document.getElementById("exampleFormControlSelect1").value.toLowerCase()=='jpg'){
+             pngFileName = jpgFileName.replace(/jpe?g/i, window.convertto);
+         }else{
+             pngFileName = jpgFileName.replace(document.getElementById("exampleFormControlSelect1").value.toLowerCase(), window.convertto);
+         }
+         linkEl.setAttribute('download', pngFileName);
+         linkEl.href = window.URL.createObjectURL(pngBlob);
+         console.log(pngBlob);
+         // If there is custom download link we don't download automatically
+         if (settings.downloadEl) {
+           settings.downloadEl.style.display = 'block';
+         } else {
+           download(pngBlob);
+         }
+       }
+
+       function createClickEvent() {
+         if ('MouseEvent' in window) {
+           return new MouseEvent('click');
+         } else {
+           const evt = document.createEvent("MouseEvents");
+           evt.initMouseEvent("click", true, true, window);
+           return evt;
+         }
+       }
+
+       function process() {
+         const imageUrl = window.URL.createObjectURL(imageFileBlob);
+         imageEl.onload = (e) => {
+           canvas.width = e.target.width;
+           canvas.height = e.target.height;
+           ctx.drawImage(e.target, 0, 0, e.target.width, e.target.height);
+           console.log('image/'+window.convertto);
+           canvas.toBlob(updateDownloadLink.bind(window, imageFileBlob.name), 'image/'+window.convertto, 1);
+         };
+         imageEl.src = imageUrl;
+         if (settings.downloadEl) {
+           settings.downloadEl.style.display = 'none';
+         }
+       }
+       return {
+         process: process
+       };
+     }
+     return convertor;
+   }
+        var conv = new JpgToPngConvertor();
+        var converted = 0;
+          window.convert = function(){
+              converted = 0;
+              
+              window.convertto = document.getElementById("exampleFormControlSelect2").value.toLowerCase();
+              console.log(window.convertto);
+              if(!document.getElementById("tozip").checked){
+                window.zip = null;
+                
+                for(var i=0;i<document.getElementById("images").files.length;i++){
+                    conv(document.getElementById("images").files[i]).process();
+                }
+              }else{
+                window.zip = new JSZip();
+                for(var i=0;i<document.getElementById("images").files.length;i++){
+                    conv(document.getElementById("images").files[i]).process(zip);
+                }
+              }
+          }
+      </script>
+   </body>
+</html>
