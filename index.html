@@ -71,7 +71,7 @@
                <div class="form-group col">
                   <label for="exampleFormControlSelect1">Convert from</label>
                   <select class="form-control" id="exampleFormControlSelect1">
-                     <option>JPG</option>
+                     <option>JPEG</option>
                      <option>PNG</option>
                      <option>BMP</option>
                   </select>
@@ -80,7 +80,7 @@
                   <label for="exampleFormControlSelect2">To</label>
                   <select class="form-control" id="exampleFormControlSelect2">
                      <option>PNG</option>
-                     <option>JPG</option>
+                     <option>JPEG</option>
                      <option>BMP</option>
                   </select>
                </div>
@@ -213,7 +213,7 @@ if your looking for a converter png to jpg or a jpg to png converter you should 
            console.log(jpgFileName);
          const linkEl = downloadLink;
          var pngFileName = "";
-         if(document.getElementById("exampleFormControlSelect1").value.toLowerCase()=='jpg'){
+         if(document.getElementById("exampleFormControlSelect1").value.toLowerCase()=='jpeg'){
              pngFileName = jpgFileName.replace(/jpe?g/i, window.convertto);
          }else{
              pngFileName = jpgFileName.replace(document.getElementById("exampleFormControlSelect1").value.toLowerCase(), window.convertto);
