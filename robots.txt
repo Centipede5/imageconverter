@@ -1,2 +1,4 @@
 User-agent: *
 Disallow:
+
+Sitemap: https://png-jpg.com/sitemap.xml
